@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty FreedomUI form page" />
+			<Item Name="LocalizableStrings.addRecord_e6szf46_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_izi8aei_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_omycopc_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_qgg6o21_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_y3jfznk_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.Button_gs0d4yi_caption.Value" Value="Push!" />
+			<Item Name="LocalizableStrings.NumberInput_0ibuhk6_label.Value" Value="Number" />
+		</Items>
+	</Group>
+</Resources>

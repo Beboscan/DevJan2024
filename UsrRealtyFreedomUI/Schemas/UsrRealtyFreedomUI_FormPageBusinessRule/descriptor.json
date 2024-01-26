@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "9731861f-ac8b-4b79-8fe6-bcfb7b78b6c1",
+    "Name": "UsrRealtyFreedomUI_FormPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1706200877000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Realty FreedomUI form page (Business rules)",
+    "DependsOn": []
+  }
+}
