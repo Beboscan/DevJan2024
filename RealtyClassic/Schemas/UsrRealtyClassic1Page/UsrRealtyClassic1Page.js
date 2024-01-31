@@ -1,4 +1,4 @@
-define("UsrRealtyClassic1Page", [], function() {
+define("UsrRealtyClassic1Page", ["ServiceHelper"], function(ServiceHelper) {
 	return {
 		entitySchemaName: "UsrRealtyClassic",
 		attributes: {},
@@ -17,6 +17,30 @@ define("UsrRealtyClassic1Page", [], function() {
 		methods: {
 			onMyButtonClick: function() {
 				this.console.log("My classic UI button works.");
+			},
+			onRunWebServiceButtonClick: function() {
+				var typeObject = this.get("UsrType");
+				if (!typeObject) {
+					return;
+				}
+				var typeId = typeObject.value;
+				var offerTypeObject = this.get("UsrOfferType");
+				if (!offerTypeObject) {
+					return;
+				}
+				var offerTypeId = offerTypeObject.value;
+				var params = {
+					realtyTypeId: typeId,
+					realtyOfferTypeId: offerTypeId,
+					entityName: "UsrRealtyClassic"
+				};				
+				this.console.log("1");
+				ServiceHelper.callService("RealtyService", "GetTotalAmountByTypeId", this.getWebServiceResult, params, this);
+				this.console.log("2");
+			},
+			getWebServiceResult: function(response, success) {
+				this.console.log("3");
+				this.Terrasoft.showInformation("Total amount by typeId: " + response.GetTotalAmountByTypeIdResult + ", success: " + success);
 			}
 		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
@@ -79,7 +103,7 @@ define("UsrRealtyClassic1Page", [], function() {
 				"operation": "insert",
 				"parentName": "ProfileContainer",
 				"propertyName":"items",
-				"name": "MyButton",
+				"name": "RunWebServiceMyButton",
 				"values": {
 					"layout": {
 						"colSpan": 10,
@@ -92,6 +116,25 @@ define("UsrRealtyClassic1Page", [], function() {
                     "caption": {bindTo: "Resources.Strings.MyButtonCaption"},
                     "click": {bindTo: "onMyButtonClick"},
                     "style": Terrasoft.controls.ButtonEnums.style.BLUE
+				},
+			},
+			{
+				"operation": "insert",
+				"parentName": "ProfileContainer",
+				"propertyName":"items",
+				"name": "MyButton",
+				"values": {
+					"layout": {
+						"colSpan": 14,
+						"rowSpan": 1,
+						"column": 10,
+						"row": 3,
+						"layoutName": "ProfileContainer"
+					},
+					"itemType": Terrasoft.ViewItemType.BUTTON,
+                    "caption": {bindTo: "Resources.Strings.RunWebServiceMyButtonCaption"},
+                    "click": {bindTo: "onRunWebServiceButtonClick"},
+                    "style": Terrasoft.controls.ButtonEnums.style.RED
 				},
 			},
 			{

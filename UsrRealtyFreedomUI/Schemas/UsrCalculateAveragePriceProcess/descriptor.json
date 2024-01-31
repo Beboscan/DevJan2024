@@ -4,6 +4,7 @@
     "Name": "UsrCalculateAveragePriceProcess",
     "ModifiedOnUtc": "\/Date(1706552035000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Calculate average price process"
+    "Caption": "Calculate average price process",
+    "DependsOn": []
   }
 }
