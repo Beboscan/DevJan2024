@@ -1001,8 +1001,8 @@ define("UsrRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/["UsrMyUtils", "@creatio-d
 						var price = await request.$context.PDS_UsrPriceUSD_70sismy;
 						var percent = await request.$context.PDS_UsrOfferTypeUsrCommissionPercent;
 						
-						//var commission = price * percent / 100;
-						var comission = my_utils.my_proc(price, percent);
+						var commission = price * percent / 100;
+						//var comission = my_utils.my_proc(price, percent);
 						request.$context.PDS_UsrCommissionUSD_6v30cod = commission;
 					}
 					/* Call the next handler if it exists and return its result. */
