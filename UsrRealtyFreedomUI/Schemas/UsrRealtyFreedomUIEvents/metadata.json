@@ -6,7 +6,15 @@
       "A2": "UsrRealtyFreedomUIEvents",
       "A5": "ecb97a1b-24c8-40ec-b644-07e3c8d131b7",
       "B1": [],
-      "B2": [],
+      "B2": [
+        {
+          "UId": "848f580c-ef7e-36e3-c27f-040dc217a312",
+          "A2": "ValueIsTooBig",
+          "A3": "c9ba3998-4f6f-41a8-8253-c26e0de611fe",
+          "A4": "c9ba3998-4f6f-41a8-8253-c26e0de611fe",
+          "A5": "ecb97a1b-24c8-40ec-b644-07e3c8d131b7"
+        }
+      ],
       "B3": [],
       "B6": "c47b793e-5b89-40a8-be82-5dca9c8cea40",
       "B8": "8.1.1.3635",
