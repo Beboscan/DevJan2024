@@ -1,0 +1,6 @@
+<Project>
+	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''">
+		<Compile Include="$(PkgPath)/KatiaArtILlenguatge/Schemas/KatiaArtILlenguatge/KatiaArtILlenguatge.cs" Condition="Exists('$(PkgPath)/KatiaArtILlenguatge/Schemas/KatiaArtILlenguatge/KatiaArtILlenguatge.cs')" />
+		<Compile Include="$(PkgPath)/KatiaArtILlenguatge/Schemas/KatiaAsignaturasDisponibles/KatiaAsignaturasDisponibles.cs" Condition="Exists('$(PkgPath)/KatiaArtILlenguatge/Schemas/KatiaAsignaturasDisponibles/KatiaAsignaturasDisponibles.cs')" />
+	</ItemGroup>
+</Project>

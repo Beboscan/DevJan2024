@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Art i Llenguatge" />
+			<Item Name="Columns.KatiaAsignatura.Caption" Value="Asignatura" />
+			<Item Name="Columns.KatiaCorreo.Caption" Value="Correo electrónico" />
+			<Item Name="Columns.KatiaDineroAPagar.Caption" Value="Dinero a pagar" />
+			<Item Name="Columns.KatiaFechaAlta.Caption" Value="Fecha de Alta" />
+			<Item Name="Columns.KatiaHorasMesActual.Caption" Value="Horas mes actual" />
+			<Item Name="Columns.KatiaNombreAlumno.Caption" Value="Nombre Alumno" />
+			<Item Name="Columns.KatiaTelefono.Caption" Value="Teléfono móvil" />
+		</Items>
+	</Group>
+</Resources>

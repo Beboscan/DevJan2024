@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Asignaturas Disponibles" />
+			<Item Name="Columns.KatiaCode.Caption" Value="Code" />
+			<Item Name="Columns.KatiaPrecioHora.Caption" Value="Precio/Hora" />
+			<Item Name="Columns.KatiaPrecioHora.Description" Value="Precio por una hora de la Asignatura" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,19 @@
+<Project>
+	<ItemGroup Condition="'$(PkgPath)' != ''">
+		<Compile Remove="$(PkgPath)/KatiaArtILlenguatge/Assemblies/**" />
+		<Compile Remove="$(PkgPath)/KatiaArtILlenguatge/Data/**" />
+		<Compile Remove="$(PkgPath)/KatiaArtILlenguatge/SqlScripts/**" />
+		<Compile Remove="$(PkgPath)/KatiaArtILlenguatge/Schemas\**" />
+		<Compile Remove="$(PkgPath)/KatiaArtILlenguatge/Resources/**" />
+		<EmbeddedResource Remove="$(PkgPath)/KatiaArtILlenguatge/Assemblies/**" />
+		<EmbeddedResource Remove="$(PkgPath)/KatiaArtILlenguatge/Data/**" />
+		<EmbeddedResource Remove="$(PkgPath)/KatiaArtILlenguatge/SqlScripts/**" />
+		<EmbeddedResource Remove="$(PkgPath)/KatiaArtILlenguatge/Schemas/**" />
+		<EmbeddedResource Remove="$(PkgPath)/KatiaArtILlenguatge/Resources/**" />
+		<None Remove="$(PkgPath)/KatiaArtILlenguatge/Assemblies/**" />
+		<None Remove="$(PkgPath)/KatiaArtILlenguatge/Data/**" />
+		<None Remove="$(PkgPath)/KatiaArtILlenguatge/SqlScripts/**" />
+		<None Remove="$(PkgPath)/KatiaArtILlenguatge/Schemas/**" />
+		<None Remove="$(PkgPath)/KatiaArtILlenguatge/Resources/**" />
+  </ItemGroup>
+</Project>

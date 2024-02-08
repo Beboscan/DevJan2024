@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Art i Llenguatge form page" />
+			<Item Name="LocalizableStrings.addRecord_bq3jqt7_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="Información" />
+		</Items>
+	</Group>
+</Resources>

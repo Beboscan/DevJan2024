@@ -1,0 +1,108 @@
+= MetaData.Schema.UId "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5"
+= MetaData.Schema.A2 "KatiaArtILlenguatge"
+= MetaData.Schema.A5 "6f71e54c-1960-40c9-94f6-073fd67699ab"
+= MetaData.Schema.B6 "1c298fba-ea65-48d4-8f17-9d86a5c1e230"
+= MetaData.Schema.EG1.UId "35ed072d-b64b-48d9-a321-be185b27409b"
+= MetaData.Schema.EG1.A2 "KatiaArtILlenguatgeEventsProcess"
+= MetaData.Schema.EG1.A5 "6f71e54c-1960-40c9-94f6-073fd67699ab"
+= MetaData.Schema.EG1.B1 []
+= MetaData.Schema.EG1.B3 []
++ MetaData.Schema.EG1.B8 "0.0.0.0"
+= MetaData.Schema.EG1.FJ1 []
+= MetaData.Schema.EG1.BK37.A3 "bb4d6607-026b-4b27-b640-8f5c77c1e89d"
+= MetaData.Schema.EG1.BK37.A4 "bb4d6607-026b-4b27-b640-8f5c77c1e89d"
+= MetaData.Schema.EG1.BK3 []
+= MetaData.Schema.EG1.BK4 []
+= MetaData.Schema.D8 "1bab9dcf-17d5-49f8-9536-8e0064f1dce0"
++ MetaData.Schema.D29 "null"
++ MetaData.Schema.D30 "null"
++ MetaData.Schema.D31 "null"
++ MetaData.Schema.D4 "8d37e4f2-7f36-440c-ab4c-8f7926d64fe1"
++ MetaData.Schema.D2 {
+  "UId": "8d37e4f2-7f36-440c-ab4c-8f7926d64fe1",
+  "A2": "KatiaNombreAlumno",
+  "A3": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A4": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A5": "6f71e54c-1960-40c9-94f6-073fd67699ab",
+  "S2": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd",
+  "E2": 1,
+  "E5": false
+}
++ MetaData.Schema.D2 {
+  "UId": "6535f39d-8b3a-81ea-1c3b-e84fdbca053a",
+  "A2": "KatiaAsignatura",
+  "A3": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A4": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A5": "f62b8903-cc23-46d8-a40c-9df6e65a6a2c",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "37ff009f-df5d-4135-a2ad-687e3a8e9c32",
+  "E6": true,
+  "E20": true,
+  "E17": "KatiaAsignaturaId",
+  "E18": "KatiaAsignaturaName"
+}
++ MetaData.Schema.D2 {
+  "UId": "788cd4f7-a159-16de-72be-405726211822",
+  "A2": "KatiaCorreo",
+  "A3": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A4": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A5": "f62b8903-cc23-46d8-a40c-9df6e65a6a2c",
+  "S2": "66cba64c-daf1-4f36-b8ea-73c0d695d90c",
+  "E25": true
+}
++ MetaData.Schema.D2 {
+  "UId": "8b2945e2-6e65-d3e3-92af-52f17aeffea9",
+  "A2": "KatiaTelefono",
+  "A3": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A4": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A5": "f62b8903-cc23-46d8-a40c-9df6e65a6a2c",
+  "S2": "26cba63c-daf1-4f36-b2ea-73c0d675d90c",
+  "E25": true
+}
++ MetaData.Schema.D2 {
+  "UId": "9a39cb2e-2e4b-0d70-6adc-4620846bb6d5",
+  "A2": "KatiaFechaAlta",
+  "A3": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A4": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A5": "f62b8903-cc23-46d8-a40c-9df6e65a6a2c",
+  "S2": "603d4960-a1a2-45e9-b232-206a54421b01"
+}
++ MetaData.Schema.D2 {
+  "UId": "0aac68ab-5b2d-cf82-2a1a-6fcde482c387",
+  "A2": "KatiaDineroAPagar",
+  "A3": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A4": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A5": "f62b8903-cc23-46d8-a40c-9df6e65a6a2c",
+  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+}
++ MetaData.Schema.D2 {
+  "UId": "97b2cb09-d46a-f690-d54a-a46eac1b1525",
+  "A2": "KatiaHorasMesActual",
+  "A3": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A4": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
+  "A5": "f62b8903-cc23-46d8-a40c-9df6e65a6a2c",
+  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+}
+~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","8d37e4f2-7f36-440c-ab4c-8f7926d64fe1","6535f39d-8b3a-81ea-1c3b-e84fdbca053a","788cd4f7-a159-16de-72be-405726211822","8b2945e2-6e65-d3e3-92af-52f17aeffea9","9a39cb2e-2e4b-0d70-6adc-4620846bb6d5","0aac68ab-5b2d-cf82-2a1a-6fcde482c387","97b2cb09-d46a-f690-d54a-a46eac1b1525"]
+= MetaData.Schema.D20.A2 "KatiaArtILlenguatgeEvents"
+= MetaData.Schema.D36.A3 "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5"
+= MetaData.Schema.D36.BS1 false
+- MetaData.Schema.EG1.B6
+- MetaData.Schema.EG1.BK29
+- MetaData.Schema.EG1.BK30
+- MetaData.Schema.D1
+- MetaData.Schema.D20.A5
+- MetaData.Schema.D20.FA4
+- MetaData.Schema.D20.FA5
+- MetaData.Schema.D20.FA6
+- MetaData.Schema.D20.FA7
+- MetaData.Schema.D20.FA11
+- MetaData.Schema.D20.FA12
+- MetaData.Schema.D20.FA15
++ MetaData.Schema.B7 false
++ MetaData.Schema.D2.["ae0e45ca-c495-4fe7-a39d-3ab7278e1617"].E16 false
++ MetaData.Schema.D2.["e80190a5-03b2-4095-90f7-a193a960adee"].E16 false
++ MetaData.Schema.D2.["ebf6bb93-8aa6-4a01-900d-c6ea67affe21"].E16 false
++ MetaData.Schema.D2.["9928edec-4272-425a-93bb-48743fee4b04"].E16 false
++ MetaData.Schema.D2.["3015559e-cbc6-406a-88af-07f7930be832"].E16 false
++ MetaData.Schema.D2.["3fabd836-6a53-4d8d-9069-6df88d9dae1e"].E16 false
