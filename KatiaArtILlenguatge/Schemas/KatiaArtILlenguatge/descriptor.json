@@ -2,12 +2,13 @@
   "Descriptor": {
     "UId": "6a77e4eb-cdff-44d7-ab1a-69f4d3393dd5",
     "Name": "KatiaArtILlenguatge",
-    "ModifiedOnUtc": "\/Date(1707418861000)\/",
+    "ModifiedOnUtc": "\/Date(1707418863000)\/",
     "Parent": {
       "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
       "Name": "BaseEntity"
     },
     "ManagerName": "EntitySchemaManager",
-    "Caption": "Art i Llenguatge"
+    "Caption": "Art i Llenguatge",
+    "DependsOn": []
   }
 }

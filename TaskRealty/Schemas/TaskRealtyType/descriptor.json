@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "9d1bc7a6-dcb4-46e8-9231-c072dde6cb8c",
+    "Name": "TaskRealtyType",
+    "ModifiedOnUtc": "\/Date(1707724438000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "TaskRealtyType",
+    "DependsOn": []
+  }
+}

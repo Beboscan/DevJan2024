@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "f8f92480-d4d7-45f8-80ba-0e355d0e401a",
+    "Name": "TaskRealtyRelatedPage",
+    "ModifiedOnUtc": "\/Date(1707722773000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Realty (Page settings)",
+    "DependsOn": []
+  }
+}
