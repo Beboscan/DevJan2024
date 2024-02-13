@@ -1,3 +1,4 @@
+/* jshint esversion: 11 */
 define("TaskRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
@@ -206,11 +207,29 @@ define("TaskRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"PDS_TaskColumn2_7pec879": {
 						"modelConfig": {
 							"path": "PDS.TaskRealtyPriceUSD"
+						},
+						"validators": {
+							"MySuperValidator": {
+								"type": "task.BBValidator",
+								"params": {
+									"minValue": 0,
+									"message": "#ResourceString(PriceMustBeGreaterZero)#"
+								}
+							}
 						}
 					},
 					"PDS_TaskRealtyArea_fbwq94n": {
 						"modelConfig": {
 							"path": "PDS.TaskRealtyArea"
+						},
+						"validators": {
+							"MySuperValidator": {
+								"type": "task.BBValidator",
+								"params": {
+									"minValue": 0,
+									"message": "#ResourceString(AreaMustBeGreaterZero)#"
+								}
+							}
 						}
 					},
 					"PDS_TaskRealtyType_f5ybwg0": {
@@ -226,6 +245,11 @@ define("TaskRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"PDS_TaskRealtyComment_z1qkwqu": {
 						"modelConfig": {
 							"path": "PDS.TaskRealtyComment"
+						},
+						"validators": {
+							"required": {
+								"type": "crt.Required"
+							}
 						}
 					}
 				}
@@ -266,8 +290,53 @@ define("TaskRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				handler: async (request, next) => {
+					if (request.attributeName === 'PDS_TaskColumn2_7pec879') {
+						var price = await request.$context.PDS_TaskColumn2_7pec879;
+						if (price > 50000) {
+							request.$context.enableAttributeValidator('PDS_TaskRealtyComment_z1qkwqu', 'required');
+						} else {
+							request.$context.disableAttributeValidator('PDS_TaskRealtyComment_z1qkwqu', 'required');
+						}
+					}
+					return next?.handle(request);
+				}
+			}
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
-		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
+		validators: /**SCHEMA_VALIDATORS*/{
+			"task.BBValidator": {
+				validator: function (config) {
+					return function (control) {
+						let value = control.value;
+						let minValue = config.minValue;
+						let valueIsCorrect = value >= minValue;
+						var result;
+						if (valueIsCorrect) {
+							result = null;
+						} else {
+							result = {
+								"task.BBValidator": { 
+									message: config.message
+								}
+							};
+						}
+						return result;
+					};
+				},
+				params: [
+					{
+						name: "minValue"
+					},
+					{
+						name: "message"
+					}
+				],
+				async: false
+			}
+		}/**SCHEMA_VALIDATORS*/
 	};
 });

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="TaskRealtyEvents" />
+			<Item Name="LocalizableStrings.AreaIsTooSmall.Value" Value="Area must be greater than {0}." />
+			<Item Name="LocalizableStrings.PriceIsTooSmall.Value" Value="Price must be greater than {0}." />
+		</Items>
+	</Group>
+</Resources>

@@ -5,6 +5,8 @@
 			<Item Name="Caption" Value="Realty form page" />
 			<Item Name="LocalizableStrings.addRecord_f0v81eq_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_so5ajj2_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.AreaMustBeGreaterZero.Value" Value="Area must be greater than zero." />
+			<Item Name="LocalizableStrings.PriceMustBeGreaterZero.Value" Value="Price must be greater than zero." />
 		</Items>
 	</Group>
 </Resources>
