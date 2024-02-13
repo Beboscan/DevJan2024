@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty visit" />
+			<Item Name="Columns.TaskComment.Caption" Value="Comment" />
+			<Item Name="Columns.TaskOwner.Caption" Value="Owner" />
+			<Item Name="Columns.TaskPotencialCustomer.Caption" Value="Potencial customer" />
+			<Item Name="Columns.TaskVisitDateTime.Caption" Value="Visit date and time" />
+		</Items>
+	</Group>
+</Resources>

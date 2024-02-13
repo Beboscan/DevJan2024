@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Caption" Value="TaskRealtyOfferType" />
 			<Item Name="Columns.TaskCode.Caption" Value="Code" />
+			<Item Name="Columns.TaskCommissionPercent.Caption" Value="Commission percent, from 0 to 100%" />
 		</Items>
 	</Group>
 </Resources>
