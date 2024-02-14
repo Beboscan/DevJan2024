@@ -2,7 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Realty" />
+			<Item Name="Caption" Value="Realty (Task)" />
 			<Item Name="Columns.TaskCommissionUSD.Caption" Value="Commission, USD" />
 			<Item Name="Columns.TaskRealtyArea.Caption" Value="Area" />
 			<Item Name="Columns.TaskRealtyComment.Caption" Value="Comment" />

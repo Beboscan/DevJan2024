@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "f756db72-2b2f-427a-94b6-ae3be034b4d7",
+    "Name": "TaskCalculateAveragePriceProcess",
+    "ModifiedOnUtc": "\/Date(1707936334000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Calculate average price process (Task)"
+  }
+}

@@ -430,6 +430,7 @@
 	<ItemGroup Label="Standalone package external assembly references" />
 	<ItemGroup Label="Entity Files">
 		<Compile Remove="$(RelativePkgFolderPath)/TaskRealty/Schemas/TaskRealtyOfferType/TaskRealtyOfferType.cs" Condition="Exists('$(RelativePkgFolderPath)/TaskRealty/Schemas/TaskRealtyOfferType/TaskRealtyOfferType.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/TaskRealty/Schemas/TaskRealtyVisit/TaskRealtyVisit.cs" Condition="Exists('$(RelativePkgFolderPath)/TaskRealty/Schemas/TaskRealtyVisit/TaskRealtyVisit.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/TaskRealty/Schemas/TaskRealty/TaskRealty.cs" Condition="Exists('$(RelativePkgFolderPath)/TaskRealty/Schemas/TaskRealty/TaskRealty.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/TaskRealty/Schemas/TaskRealtyType/TaskRealtyType.cs" Condition="Exists('$(RelativePkgFolderPath)/TaskRealty/Schemas/TaskRealtyType/TaskRealtyType.cs')" />
 	</ItemGroup>
