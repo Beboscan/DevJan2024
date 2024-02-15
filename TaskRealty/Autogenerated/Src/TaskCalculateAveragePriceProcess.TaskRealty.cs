@@ -36,10 +36,6 @@
 			Guid typeId = Get<Guid>("RealtyTypeIdParameter");
 			Guid offerTypeId = Get<Guid>("RealtyOfferTypeIdParameter");
 			
-			/*if(typeId == null || offerTypeId == null) {
-				return -1;
-			}*/
-			
 			var typeFilter = esq.CreateFilterWithParameters(FilterComparisonType.Equal, "TaskRealtyType", typeId);
 			esq.Filters.Add(typeFilter);
 			

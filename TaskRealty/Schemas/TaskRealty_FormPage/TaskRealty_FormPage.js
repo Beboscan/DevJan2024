@@ -1,4 +1,4 @@
-define("TaskRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("TaskRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -47,7 +47,22 @@ define("TaskRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"size": "large",
 					"iconPosition": "left-icon",
 					"visible": true,
-					"icon": "calculator-button-icon",
+					"icon": "actions-button-icon",
+					"clicked": {},
+					"clickMode": "menu",
+					"menuItems": []
+				},
+				"parentName": "CardToggleContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItem_CalcAvgPriceArea",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_4pliii7_caption)#",
+					"visible": true,
 					"clicked": {
 						"request": "crt.RunBusinessProcessRequest",
 						"params": {
@@ -56,11 +71,26 @@ define("TaskRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"recordIdProcessParameterName": "RealtyRecordIdParameter"
 						}
 					},
-					"clickMode": "default"
+					"icon": null
 				},
-				"parentName": "CardToggleContainer",
-				"propertyName": "items",
+				"parentName": "Button_oxzpvb0",
+				"propertyName": "menuItems",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItem_StartService",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_wcj3bdi_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "task.RunWebServiceButtonRequest"
+					}
+				},
+				"parentName": "Button_oxzpvb0",
+				"propertyName": "menuItems",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -759,6 +789,50 @@ define("TaskRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						var commission = price2 * percent / 100;
 						request.$context.PDS_TaskCommissionUSD_laihzrn = commission;
 					}
+					return next?.handle(request);
+				}
+			},
+			{
+				request: "task.RunWebServiceButtonRequest",
+				/* Implementation of the custom query handler. */
+				handler: async (request, next) => {
+					this.console.log("Run web service button works...");
+
+					// get id from type lookup type object
+					var typeObject = await request.$context.PDS_TaskRealtyType_f5ybwg0;
+					var typeId = "";
+					if (typeObject) {
+						typeId = typeObject.value;
+					}
+
+					// get id from type lookup type object
+					var offerTypeObject = await request.$context.PDS_TaskRealtyOfferType_01nlvg2;
+					var offerTypeId = "";
+					if (offerTypeObject) {
+						offerTypeId = offerTypeObject.value;
+					}
+
+					/* Create an instance of the HTTP client from @creatio-devkit/common. */
+					const httpClientService = new sdk.HttpClientService();
+					
+					/* Specify the URL to retrieve the current rate. Use the coindesk.com external service. */
+					const baseUrl = Terrasoft.utils.uri.getConfigurationWebServiceBaseUrl();
+					const transferName = "rest";
+					const serviceName = "RealtyTaskService";
+					const methodName = "GetAveragePriceByTypeIdOfferTypeId";
+					const endpoint = Terrasoft.combinePath(baseUrl, transferName, serviceName, methodName);
+					
+					//const endpoint = "http://localhost/D8_Studio/0/rest/RealtyTaskService/GetAveragePriceByTypeIdOfferTypeId";
+					/* Send a POST HTTP request. The HTTP client converts the response body from JSON to a JS object automatically. */
+					var params = {
+						realtyTypeId: typeId,
+						realtyOfferTypeId: offerTypeId
+					};
+					const response = await httpClientService.post(endpoint, params);
+					
+					this.console.log("response average price = " + response.body.GetAveragePriceByTypeIdOfferTypeId);
+					
+					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
 				}
 			}

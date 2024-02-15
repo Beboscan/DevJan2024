@@ -14,6 +14,8 @@
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_80bzzi2_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_4v4pqe2_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_vdileul_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.MenuItem_4pliii7_caption.Value" Value="Calculate average price by area from process" />
+			<Item Name="LocalizableStrings.MenuItem_wcj3bdi_caption.Value" Value="Run web service to calc avg of prices" />
 			<Item Name="LocalizableStrings.NumberInput_wipviep_label.Value" Value="Number" />
 			<Item Name="LocalizableStrings.PriceMustBeGreaterZero.Value" Value="Price must be greater than zero." />
 		</Items>
