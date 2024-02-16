@@ -24,8 +24,8 @@ namespace Terrasoft.Configuration
             Select select = new Select(UserConnection)
                 .Column(Func.Avg("TaskRealtyPriceUSD"))
                 .From("TaskRealty")
-                .Where("TaskRealtyType").IsEqual(Column.Parameter(new Guid(realtyTypeId)))
-                .And("TaskRealtyOfferType").IsEqual(Column.Parameter(new Guid(realtyOfferTypeId)))
+                .Where("TaskRealtyTypeId").IsEqual(Column.Parameter(new Guid(realtyTypeId)))
+                .And("TaskRealtyOfferTypeId").IsEqual(Column.Parameter(new Guid(realtyOfferTypeId)))
                 as Select;
             decimal result = select.ExecuteScalar<decimal>();
             return result;
