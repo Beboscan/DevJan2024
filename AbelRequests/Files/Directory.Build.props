@@ -1,0 +1,16 @@
+<Project>
+	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''">
+		<Compile Include="$(PkgPath)/AbelRequests/Schemas/AbelRquestStatus/AbelRquestStatus.cs" Condition="Exists('$(PkgPath)/AbelRequests/Schemas/AbelRquestStatus/AbelRquestStatus.cs')" />
+		<Compile Include="$(PkgPath)/AbelRequests/Schemas/AbelRequestFeedbackScore/AbelRequestFeedbackScore.cs" Condition="Exists('$(PkgPath)/AbelRequests/Schemas/AbelRequestFeedbackScore/AbelRequestFeedbackScore.cs')" />
+		<Compile Include="$(PkgPath)/AbelRequests/Schemas/AbelExpenses/AbelExpenses.cs" Condition="Exists('$(PkgPath)/AbelRequests/Schemas/AbelExpenses/AbelExpenses.cs')" />
+		<Compile Include="$(PkgPath)/AbelRequests/Schemas/Activity/Activity.cs" Condition="Exists('$(PkgPath)/AbelRequests/Schemas/Activity/Activity.cs')" />
+		<Compile Include="$(PkgPath)/AbelRequests/Schemas/AbelRequestCategory/AbelRequestCategory.cs" Condition="Exists('$(PkgPath)/AbelRequests/Schemas/AbelRequestCategory/AbelRequestCategory.cs')" />
+		<Compile Include="$(PkgPath)/AbelRequests/Schemas/AbelRequests/AbelRequests.cs" Condition="Exists('$(PkgPath)/AbelRequests/Schemas/AbelRequests/AbelRequests.cs')" />
+		<Compile Include="$(PkgPath)/AbelRequests/Schemas/AbelRequestLifeCycle/AbelRequestLifeCycle.cs" Condition="Exists('$(PkgPath)/AbelRequests/Schemas/AbelRequestLifeCycle/AbelRequestLifeCycle.cs')" />
+		<Compile Include="$(PkgPath)/AbelRequests/Schemas/AbelRequestCategory1/AbelRequestCategory1.cs" Condition="Exists('$(PkgPath)/AbelRequests/Schemas/AbelRequestCategory1/AbelRequestCategory1.cs')" />
+		<Compile Include="$(PkgPath)/AbelRequests/Schemas/AbelRequestSubcategory1/AbelRequestSubcategory1.cs" Condition="Exists('$(PkgPath)/AbelRequests/Schemas/AbelRequestSubcategory1/AbelRequestSubcategory1.cs')" />
+		<Compile Include="$(PkgPath)/AbelRequests/Schemas/AbelRequestStatus/AbelRequestStatus.cs" Condition="Exists('$(PkgPath)/AbelRequests/Schemas/AbelRequestStatus/AbelRequestStatus.cs')" />
+		<Compile Include="$(PkgPath)/AbelRequests/Schemas/AbelRequestSubcategory/AbelRequestSubcategory.cs" Condition="Exists('$(PkgPath)/AbelRequests/Schemas/AbelRequestSubcategory/AbelRequestSubcategory.cs')" />
+		<Compile Include="$(PkgPath)/AbelRequests/Schemas/AbelRequestExpenseType/AbelRequestExpenseType.cs" Condition="Exists('$(PkgPath)/AbelRequests/Schemas/AbelRequestExpenseType/AbelRequestExpenseType.cs')" />
+	</ItemGroup>
+</Project>

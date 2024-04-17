@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.ExpansionPanel_z01271j_title.Value" Value="Requests" />
+			<Item Name="LocalizableStrings.TabContainer_hvqospq_caption.Value" Value="REQUESTS" />
+		</Items>
+	</Group>
+</Resources>

@@ -301,18 +301,8 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Package References">
-		<Reference Include="Terrasoft.Configuration">
-			<HintPath>$(RelativePkgFolderPath)/../bin/Terrasoft.Configuration.dll</HintPath>
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="CrtCustomer360App">
-			<HintPath>$(RelativePkgFolderPath)/CrtCustomer360App/$(StandalonePackageAssemblyPath)/CrtCustomer360App.dll</HintPath>
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="AbelRequests">
-			<HintPath>$(RelativePkgFolderPath)/AbelRequests/$(StandalonePackageAssemblyPath)/AbelRequests.dll</HintPath>
+		<Reference Include="CrtCore">
+			<HintPath>$(RelativePkgFolderPath)/CrtCore/$(StandalonePackageAssemblyPath)/CrtCore.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -416,11 +406,6 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtCore">
-			<HintPath>$(RelativePkgFolderPath)/CrtCore/$(StandalonePackageAssemblyPath)/CrtCore.dll</HintPath>
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
 		<Reference Include="CrtProductivityApp">
 			<HintPath>$(RelativePkgFolderPath)/CrtProductivityApp/$(StandalonePackageAssemblyPath)/CrtProductivityApp.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
@@ -431,24 +416,31 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
+		<Reference Include="CrtCustomer360App">
+			<HintPath>$(RelativePkgFolderPath)/CrtCustomer360App/$(StandalonePackageAssemblyPath)/CrtCustomer360App.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
 		<Reference Include="CrtC360InUiV2">
 			<HintPath>$(RelativePkgFolderPath)/CrtC360InUiV2/$(StandalonePackageAssemblyPath)/CrtC360InUiV2.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
 	</ItemGroup>
-	<ItemGroup Label="Standalone package external assembly references">
-		<Reference Include="$(RelativePkgFolderPath)/../Lib/System.IO.Packaging.CrtBase.dll">
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="$(RelativePkgFolderPath)/../Lib/DocumentFormat.OpenXml.CrtBase.dll">
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
-	</ItemGroup>
+	<ItemGroup Label="Standalone package external assembly references" />
 	<ItemGroup Label="Entity Files">
-		<Compile Remove="$(RelativePkgFolderPath)/UsrApp_gl2yn5k/Schemas/Account/Account.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrApp_gl2yn5k/Schemas/Account/Account.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRquestStatus/AbelRquestStatus.cs" Condition="Exists('$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRquestStatus/AbelRquestStatus.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestFeedbackScore/AbelRequestFeedbackScore.cs" Condition="Exists('$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestFeedbackScore/AbelRequestFeedbackScore.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelExpenses/AbelExpenses.cs" Condition="Exists('$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelExpenses/AbelExpenses.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AbelRequests/Schemas/Activity/Activity.cs" Condition="Exists('$(RelativePkgFolderPath)/AbelRequests/Schemas/Activity/Activity.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestCategory/AbelRequestCategory.cs" Condition="Exists('$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestCategory/AbelRequestCategory.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequests/AbelRequests.cs" Condition="Exists('$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequests/AbelRequests.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestLifeCycle/AbelRequestLifeCycle.cs" Condition="Exists('$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestLifeCycle/AbelRequestLifeCycle.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestCategory1/AbelRequestCategory1.cs" Condition="Exists('$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestCategory1/AbelRequestCategory1.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestSubcategory1/AbelRequestSubcategory1.cs" Condition="Exists('$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestSubcategory1/AbelRequestSubcategory1.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestStatus/AbelRequestStatus.cs" Condition="Exists('$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestStatus/AbelRequestStatus.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestSubcategory/AbelRequestSubcategory.cs" Condition="Exists('$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestSubcategory/AbelRequestSubcategory.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestExpenseType/AbelRequestExpenseType.cs" Condition="Exists('$(RelativePkgFolderPath)/AbelRequests/Schemas/AbelRequestExpenseType/AbelRequestExpenseType.cs')" />
 	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>
 	<Target Name="Paths" BeforeTargets="BeforeCompile">

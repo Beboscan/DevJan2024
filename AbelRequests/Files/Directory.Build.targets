@@ -1,0 +1,19 @@
+<Project>
+	<ItemGroup Condition="'$(PkgPath)' != ''">
+		<Compile Remove="$(PkgPath)/AbelRequests/Assemblies/**" />
+		<Compile Remove="$(PkgPath)/AbelRequests/Data/**" />
+		<Compile Remove="$(PkgPath)/AbelRequests/SqlScripts/**" />
+		<Compile Remove="$(PkgPath)/AbelRequests/Schemas\**" />
+		<Compile Remove="$(PkgPath)/AbelRequests/Resources/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AbelRequests/Assemblies/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AbelRequests/Data/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AbelRequests/SqlScripts/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AbelRequests/Schemas/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AbelRequests/Resources/**" />
+		<None Remove="$(PkgPath)/AbelRequests/Assemblies/**" />
+		<None Remove="$(PkgPath)/AbelRequests/Data/**" />
+		<None Remove="$(PkgPath)/AbelRequests/SqlScripts/**" />
+		<None Remove="$(PkgPath)/AbelRequests/Schemas/**" />
+		<None Remove="$(PkgPath)/AbelRequests/Resources/**" />
+  </ItemGroup>
+</Project>
